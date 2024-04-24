@@ -147,4 +147,41 @@ $(document).ready(() => {
     }
 
 
+    // scroll para seções
+    let navBtn = $('.nav-item');
+
+    let bannerSection = $('#mainSlider');
+    let aboutSection = $('#about-area');
+    let serviceSection = $('#services-area');
+    let teamSection = $('#team-area');
+    let portifolioSection = $('#portifolio-area');
+    let contactSection = $('#contact-area');
+
+    let scrollTo = '';
+
+    $(navBtn).click(function() {
+
+        let btnId = $(this).attr('id');
+
+        if (btnId == 'home-menu') {
+            scrollTo = bannerSection;
+        } else if (btnId == 'about-menu') {
+            scrollTo = aboutSection;
+        } else if (btnId == 'services-menu') {
+            scrollTo = serviceSection;
+        } else if (btnId == 'team-menu') {
+            scrollTo = teamSection;
+        } else if (btnId == 'portfolio-menu') {
+            scrollTo = portifolioSection;
+        } else if (btnId == 'contact-menu') {
+            scrollTo = contactSection;
+        } 
+
+        // animação do scroll
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(scrollTo).offset().top - 70
+        }, 1500);
+
+    });
+
 });
