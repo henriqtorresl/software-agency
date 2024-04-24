@@ -20,7 +20,7 @@ O Software Agency é um projeto criado para praticar o uso do Bootstrap na const
 1. Faça um clone deste repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/software-agency.git
+git clone https://github.com/henriqtorresl/software-agency.git
 
 ```
 
